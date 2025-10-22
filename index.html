@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Layout</title>
+
+  <style>
+ body {
+  background-image:url("banner-template-background-geometri-for-background-persentation-design-banner-website-and-for-another-your-businnes-dan-your-design-free-vector.jpg") ;
+}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f4f6f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .card-container {
+      display: flex;
+      gap: 25px;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 15px;
+      overflow: hidden;
+      width: 300px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .technology {
+      background-color: #00bcd4;
+    }
+
+    .popular {
+      background-color: #3f51b5;
+    }
+
+    .design {
+      background-color: #e91e63;
+    }
+
+    .card h3 {
+      font-size: 16px;
+      margin: 12px 0 6px;
+      color: #222;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .author {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .author img {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+    }
+
+    .author h4 {
+      font-size: 14px;
+      color: #111;
+    }
+
+    .author p {
+      font-size: 12px;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card-container">
+
+    <div class="card">
+      <img src="images (3).jpeg" alt="car">
+      <div class="card-content">
+        <span class="tag technology">TECHNOLOGY</span>
+        <h3>Why is the Tesla Cybertruck designed the way it is?</h3>
+        <p>An exploration into the truck's polarising design</p>
+        <div class="author">
+          <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="author">
+          <div>
+            <h4>July Dec</h4>
+            <p>2h ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images (4).jpeg" alt="hot air balloons">
+      <div class="card-content">
+        <span class="tag popular">POPULAR</span>
+        <h3>How to Keep Going When You Don’t Know What’s Next</h3>
+        <p>The future can be scary, but there are ways to deal with that fear.</p>
+        <div class="author">
+          <img src="" alt="author">
+          <div>
+            <h4>Eyup Ucmaz</h4>
+            <p>Yesterday</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="Where-to-Photograph-the-Most-Stunning-Views-of-the-New-York-Skyline-at-Night-SPortnoy_20150525_9100-1.jpg" alt="city">
+      <div class="card-content">
+        <span class="tag design">DESIGN</span>
+        <h3>10 Rules of Dashboard Design</h3>
+        <p>Dashboard Design Guidelines</p>
+        <div class="author">
+          <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="author">
+          <div>
+            <h4>Carrie Brewer</h4>
+            <p>1w ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
